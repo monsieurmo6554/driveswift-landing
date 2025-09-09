@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - DriveSwift | Frequently Asked Questions</title>
+    <meta name="description" content="Find answers to common questions about DriveSwift UK driving test app. Theory test, hazard perception, DVSA content, and more.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .faq-hero {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: white;
+            padding: 120px 0 80px;
+        }
+        
+        .faq-search {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            padding: 15px 25px 15px 50px;
+            font-size: 1.1rem;
+            color: white;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .faq-categories {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .category-nav {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .category-link {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #6b7280;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .category-link.active,
+        .category-link:hover {
+            background: #7c3aed;
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+        
+        .faq-section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .faq-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #374151;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            background: #f9fafb;
+        }
+        
+        .faq-toggle {
+            font-size: 1.25rem;
+            color: #7c3aed;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #6b7280;
+            line-height: 1.7;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+            animation: fadeInDown 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .popular-badge {
+            background: #fef3c7;
+            color: #d97706;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.75rem;
+        }
+        
+        @media (max-width: 768px) {
+            .faq-categories {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .category-nav {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            
+            .category-link {
+                margin-bottom: 0;
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class="fas fa-car" style="color: #7c3aed; margin-right: 8px;"></i>
+                    <span class="logo-text">DriveSwift</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#performance" class="nav-link">Performance</a>
+                <a href="index.html#download" class="nav-link">Download</a>
+                <a href="help.html" class="nav-link">Help</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="text-center">
+                <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Frequently Asked Questions</h1>
+                <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem;">
+                    Find quick answers to the most common DriveSwift questions
+                </p>
+                
+                <div style="position: relative; max-width: 500px; margin: 0 auto;">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="faq-search" placeholder="Search FAQ..." id="faqSearch">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section style="padding: 80px 0; background: #f8fafc;">
+        <div class="container">
+            <div class="faq-categories">
+                <!-- Category Navigation -->
+                <div class="category-nav">
+                    <a href="#getting-started" class="category-link active">Getting Started</a>
+                    <a href="#theory-test" class="category-link">Theory Test</a>
+                    <a href="#hazard-perception" class="category-link">Hazard Perception</a>
+                    <a href="#account-billing" class="category-link">Account & Billing</a>
+                    <a href="#technical" class="category-link">Technical Support</a>
+                    <a href="#dvsa-content" class="category-link">DVSA Content</a>
+                </div>
+
+                <!-- FAQ Content -->
+                <div class="faq-content">
+                    <!-- Getting Started -->
+                    <div id="getting-started" class="faq-section">
+                        <h2 class="faq-section-title">Getting Started</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How do I download and install DriveSwift?
+                                    <span class="popular-badge">Popular</span>
+                                </span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift is available for free on both iOS and Android devices. Visit the App Store or Google Play Store, search for "DriveSwift", and tap "Get" or "Install". The app is approximately 150MB and requires iOS 13.0+ or Android 7.0+.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Do I need to create an account to use DriveSwift?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                You can use DriveSwift in guest mode with limited features, but creating a free account unlocks progress tracking, personalized study plans, and sync across devices. Premium features require a subscription.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What license types does DriveSwift support?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift supports all UK license categories including Car (Category B), Motorcycle (Category A), Lorry (Category C), Bus (Category D), and Trailer categories. Select your license type during setup for personalized content.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theory Test -->
+                    <div id="theory-test" class="faq-section">
+                        <h2 class="faq-section-title">Theory Test</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Are the theory questions the same as the real DVSA test?
+                                    <span class="popular-badge">Popular</span>
+                                </span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes! All theory questions in DriveSwift are officially licensed from DVSA. This means you're practicing with the exact same question bank used in the real theory test, ensuring you're fully prepared.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How many practice questions are available?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift includes over 1,200 official DVSA theory questions across all categories and topics. Questions are regularly updated to reflect the latest Highway Code changes and DVSA revisions.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I take mock tests that simulate the real exam?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Absolutely! Our mock test mode replicates the exact format, timing, and conditions of the real DVSA theory test. You'll get 50 questions in 57 minutes, just like the actual exam.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How does progress tracking work?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift tracks your performance across all question categories, identifies weak areas, and provides personalized study recommendations. Your progress syncs across all your devices when logged in.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hazard Perception -->
+                    <div id="hazard-perception" class="faq-section">
+                        <h2 class="faq-section-title">Hazard Perception</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Are the hazard perception clips official DVSA content?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, DriveSwift includes 36 official DVSA CGI (Computer Generated Imagery) hazard perception clips. These are the same type of clips used in the actual DVSA hazard perception test.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How does the hazard perception scoring work?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                The scoring system mirrors the real DVSA test. You score points for clicking during the hazard window (0-5 points per hazard). Clicking too early, too late, or too frequently results in zero points. The maximum score per clip is 5 points.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What makes a developing hazard?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                A developing hazard is a situation that requires you to take some action, such as changing speed or direction. It's something that causes you to respond as a driver - like a pedestrian stepping into the road or a car pulling out of a junction.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account & Billing -->
+                    <div id="account-billing" class="faq-section">
+                        <h2 class="faq-section-title">Account & Billing</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What's included in the free version?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                The free version includes 10 theory questions per day, basic progress tracking, and access to the Highway Code. To unlock unlimited questions, hazard perception clips, and advanced features, upgrade to Premium.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How much does DriveSwift Premium cost?
+                                    <span class="popular-badge">Popular</span>
+                                </span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift Premium is available for £2.99/month or £19.99/year (save £16). We also offer a one-time Business License for £39.99. All subscriptions include unlimited access to all DVSA content.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I cancel my subscription anytime?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, you can cancel your subscription at any time through your device's app store settings or by contacting support. You'll continue to have access to Premium features until your current billing period ends.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Do you offer refunds?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Refunds are handled through the App Store or Google Play Store according to their respective policies. For exceptional circumstances, please contact our support team at support@driveswift.co.uk.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Support -->
+                    <div id="technical" class="faq-section">
+                        <h2 class="faq-section-title">Technical Support</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>DriveSwift won't start or keeps crashing, what should I do?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                First, try force-closing and restarting the app. If that doesn't work, restart your device and ensure you have the latest app version. Check you have at least 1GB of free storage space. If problems persist, contact support with your device model and iOS/Android version.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I use DriveSwift offline?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes! DriveSwift offers full offline functionality. Download content packs while connected to Wi-Fi, then practice theory questions and hazard perception anywhere without internet connection. Progress syncs when you reconnect.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Which devices are supported?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift supports iPhone (iOS 13.0+), iPad (iPadOS 13.0+), and Android devices (Android 7.0+). The app is optimized for phones but works great on tablets too.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DVSA Content -->
+                    <div id="dvsa-content" class="faq-section">
+                        <h2 class="faq-section-title">DVSA Content</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How do I know the content is officially licensed by DVSA?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                DriveSwift is an official DVSA licensed content partner. You can verify this on our DVSA License page or by contacting DVSA directly. All our theory questions and hazard clips come directly from DVSA's official question bank.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How often is the content updated?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Our content is updated regularly to reflect Highway Code changes and DVSA revisions. Major updates typically happen when DVSA releases new content, usually 2-3 times per year. App updates are pushed automatically.
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Is the Highway Code the latest version?</span>
+                                <i class="fas fa-plus faq-toggle"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, DriveSwift includes the latest 2024 edition of the Highway Code with all recent updates including new rules for electric vehicles, autonomous vehicles, and updated guidance on mobile phone use.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still have questions -->
+    <section style="padding: 80px 0; background: white;">
+        <div class="container text-center">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #111827;">Still have questions?</h2>
+            <p style="color: #6b7280; font-size: 1.125rem; margin-bottom: 2rem;">
+                Can't find the answer you're looking for? Our support team is here to help.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Support
+                </a>
+                <a href="help.html" class="btn btn-secondary">
+                    <i class="fas fa-book"></i>
+                    Help Center
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>DriveSwift</span>
+                    </div>
+                    <p>Official DVSA licensed content to help you pass your UK driving test.</p>
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DVSA Licensed Partner</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#performance">Performance</a>
+                        <a href="index.html#download">Download</a>
+                        <a href="index.html#dvsa">DVSA Content</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="help.html">Help Center</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="status.html">System Status</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="dvsa-license.html">DVSA License</a>
+                        <a href="cookies.html">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 DriveSwift. All rights reserved.</p>
+                    <p>Official DVSA licensed content partner. Licensed by the Driver and Vehicle Standards Agency.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ item toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                        answer.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Category navigation
+            const categoryLinks = document.querySelectorAll('.category-link');
+            const sections = document.querySelectorAll('.faq-section');
+            
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Update active link
+                        categoryLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                        
+                        // Scroll to section
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('faqSearch');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        // Highlight search term in question
+                        if (searchTerm && question.includes(searchTerm)) {
+                            item.style.background = '#fef3c7';
+                        } else {
+                            item.style.background = 'white';
+                        }
+                    } else {
+                        item.style.display = searchTerm ? 'none' : 'block';
+                        item.style.background = 'white';
+                    }
+                });
+                
+                // Show/hide sections based on visible items
+                sections.forEach(section => {
+                    const visibleItems = section.querySelectorAll('.faq-item[style*="block"], .faq-item:not([style*="none"])');
+                    if (searchTerm) {
+                        section.style.display = visibleItems.length > 0 ? 'block' : 'none';
+                    } else {
+                        section.style.display = 'block';
+                    }
+                });
+            });
+            
+            // Scroll spy for category navigation
+            window.addEventListener('scroll', () => {
+                const scrollPos = window.scrollY + 150;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    const correspondingLink = document.querySelector(`.category-link[href="#${sectionId}"]`);
+                    
+                    if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                        categoryLinks.forEach(link => link.classList.remove('active'));
+                        if (correspondingLink) {
+                            correspondingLink.classList.add('active');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

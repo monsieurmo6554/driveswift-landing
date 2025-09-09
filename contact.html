@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DriveSwift | Get Support for UK Driving Test App</title>
+    <meta name="description" content="Contact DriveSwift support team. Get help with theory test practice, hazard perception, and DVSA content. Fast response guaranteed.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            color: white;
+            padding: 120px 0 80px;
+        }
+        
+        .contact-form {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .contact-method {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .response-time {
+            background: #f0f9ff;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        
+        .priority-badge {
+            background: linear-gradient(135deg, #ef4444, #f87171);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class="fas fa-car" style="color: #7c3aed; margin-right: 8px;"></i>
+                    <span class="logo-text">DriveSwift</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#performance" class="nav-link">Performance</a>
+                <a href="index.html#download" class="nav-link">Download</a>
+                <a href="help.html" class="nav-link">Help</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="text-center">
+                <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Contact Us</h1>
+                <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Need help with DriveSwift? Our support team is here to help you succeed with your driving test preparation.
+                </p>
+                
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-clock" style="font-size: 1.25rem;"></i>
+                        <span>Average response: 2 hours</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-users" style="font-size: 1.25rem;"></i>
+                        <span>Dedicated UK support team</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-shield-check" style="font-size: 1.25rem;"></i>
+                        <span>DVSA expertise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section style="padding: 80px 0; background: #f8fafc;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Choose the best way to reach our support team</p>
+            </div>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #10b981, #34d399);">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Email Support</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Get detailed help with any DriveSwift questions</p>
+                    <p style="font-weight: 600; color: #374151;">support@driveswift.co.uk</p>
+                    <div class="response-time">Usually within 2 hours</div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Live Chat</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Instant help for urgent issues</p>
+                    <p style="font-weight: 600; color: #374151;">Available in-app</p>
+                    <div class="response-time">Instant response</div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #f59e0b, #fbbf24);">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Bug Reports</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Report technical issues and bugs</p>
+                    <p style="font-weight: 600; color: #374151;">bugs@driveswift.co.uk</p>
+                    <div class="response-time">
+                        Within 4 hours
+                        <span class="priority-badge">Priority</span>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Study Support</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Get help with theory test preparation</p>
+                    <p style="font-weight: 600; color: #374151;">study@driveswift.co.uk</p>
+                    <div class="response-time">Within 6 hours</div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #ef4444, #f87171);">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Business Inquiries</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Partnerships, licensing, and business questions</p>
+                    <p style="font-weight: 600; color: #374151;">business@driveswift.co.uk</p>
+                    <div class="response-time">Within 24 hours</div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #6b7280, #9ca3af);">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #111827;">Phone Support</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Speak directly with our UK support team</p>
+                    <p style="font-weight: 600; color: #374151;">+44 20 3807 0000</p>
+                    <div class="response-time">Mon-Fri, 9AM-6PM GMT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section style="padding: 80px 0; background: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #111827;">Send us a message</h2>
+                    <p style="color: #6b7280; font-size: 1.125rem; margin-bottom: 2rem;">
+                        Fill out the form and we'll get back to you as soon as possible. For urgent issues, 
+                        please use our live chat or phone support.
+                    </p>
+                    
+                    <div style="background: #f0f9ff; border-radius: 12px; padding: 1.5rem; border: 1px solid #e0f2fe;">
+                        <h4 style="color: #1e40af; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-lightbulb"></i>
+                            Before contacting us
+                        </h4>
+                        <ul style="color: #374151; line-height: 1.7; margin: 0; padding-left: 1.25rem;">
+                            <li>Check our <a href="faq.html" style="color: #7c3aed;">FAQ page</a> for common questions</li>
+                            <li>Visit our <a href="help.html" style="color: #7c3aed;">Help Center</a> for detailed guides</li>
+                            <li>Check the <a href="status.html" style="color: #7c3aed;">System Status</a> page for outages</li>
+                            <li>Include your account email for faster support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea" 
+                                placeholder="Please describe your question or issue in detail. Include any error messages or steps you've already tried." 
+                                required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>DriveSwift</span>
+                    </div>
+                    <p>Official DVSA licensed content to help you pass your UK driving test.</p>
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DVSA Licensed Partner</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#performance">Performance</a>
+                        <a href="index.html#download">Download</a>
+                        <a href="index.html#dvsa">DVSA Content</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="help.html">Help Center</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="status.html">System Status</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="dvsa-license.html">DVSA License</a>
+                        <a href="cookies.html">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 DriveSwift. All rights reserved.</p>
+                    <p>Official DVSA licensed content partner. Licensed by the Driver and Vehicle Standards Agency.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const formObject = Object.fromEntries(formData);
+            
+            // Show loading state
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate sending (replace with actual form submission)
+            setTimeout(() => {
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.innerHTML = `
+                    <div style="background: linear-gradient(135deg, #10b981, #34d399); color: white; padding: 1.5rem; border-radius: 12px; margin-top: 1rem; text-align: center;">
+                        <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4 style="margin: 0 0 0.5rem 0;">Message Sent Successfully!</h4>
+                        <p style="margin: 0; opacity: 0.9;">We've received your message and will respond within 2 hours. Check your email for updates.</p>
+                    </div>
+                `;
+                
+                this.appendChild(successMessage);
+                this.reset();
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Remove success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 5000);
+                
+                // Track contact form submission
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'contact_form_submit', {
+                        'event_category': 'Contact',
+                        'event_label': formObject.subject
+                    });
+                }
+            }, 1500);
+        });
+        
+        // Dynamic response time based on priority
+        document.getElementById('priority').addEventListener('change', function() {
+            const priority = this.value;
+            let responseTime = '';
+            
+            switch(priority) {
+                case 'critical':
+                    responseTime = 'Expected response: Within 30 minutes';
+                    break;
+                case 'high':
+                    responseTime = 'Expected response: Within 2 hours';
+                    break;
+                case 'medium':
+                    responseTime = 'Expected response: Within 4 hours';
+                    break;
+                default:
+                    responseTime = 'Expected response: Within 24 hours';
+            }
+            
+            // Show response time
+            let timeIndicator = document.getElementById('responseTime');
+            if (!timeIndicator) {
+                timeIndicator = document.createElement('div');
+                timeIndicator.id = 'responseTime';
+                timeIndicator.style.cssText = 'margin-top: 0.5rem; padding: 0.5rem; background: #f0f9ff; border-radius: 6px; color: #1e40af; font-size: 0.875rem; font-weight: 500;';
+                this.parentNode.appendChild(timeIndicator);
+            }
+            timeIndicator.textContent = responseTime;
+        });
+    </script>
+</body>
+</html>

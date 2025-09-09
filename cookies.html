@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - DriveSwift</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class="fas fa-car" style="color: #7c3aed; margin-right: 8px;"></i>
+                    <span class="logo-text">DriveSwift</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#performance" class="nav-link">Performance</a>
+                <a href="index.html#download" class="nav-link">Download</a>
+                <a href="help.html" class="nav-link">Help</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cookie Policy Content -->
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-header">
+                <h1><i class="fas fa-cookie-bite"></i> Cookie Policy</h1>
+                <p class="legal-subtitle">How we use cookies and similar technologies</p>
+            </div>
+
+            <div class="legal-content">
+                <div class="highlight-box">
+                    <h4><i class="fas fa-info-circle"></i> Cookie Overview</h4>
+                    <p>This Cookie Policy explains how DriveSwift uses cookies and similar technologies to enhance your experience, analyze usage, and provide personalized content.</p>
+                </div>
+
+                <!-- Cookie Consent Banner -->
+                <div id="cookieBanner" class="cookie-banner" style="display: none;">
+                    <div class="cookie-banner-content">
+                        <div class="cookie-banner-text">
+                            <i class="fas fa-cookie-bite"></i>
+                            <div>
+                                <h4>We use cookies</h4>
+                                <p>We use cookies to enhance your browsing experience and analyze website traffic. You can manage your preferences below.</p>
+                            </div>
+                        </div>
+                        <div class="cookie-banner-actions">
+                            <button class="btn btn-outline" onclick="showCookieSettings()">Manage Preferences</button>
+                            <button class="btn btn-primary" onclick="acceptAllCookies()">Accept All</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookie Settings Modal -->
+                <div id="cookieModal" class="cookie-modal" style="display: none;">
+                    <div class="cookie-modal-content">
+                        <div class="cookie-modal-header">
+                            <h3>Cookie Preferences</h3>
+                            <button class="close-btn" onclick="closeCookieSettings()">&times;</button>
+                        </div>
+                        <div class="cookie-modal-body">
+                            <div class="cookie-category">
+                                <div class="cookie-category-header">
+                                    <h4>Essential Cookies</h4>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked disabled>
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                                <p>Required for basic website functionality. Cannot be disabled.</p>
+                            </div>
+                            
+                            <div class="cookie-category">
+                                <div class="cookie-category-header">
+                                    <h4>Analytics Cookies</h4>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="analytics-cookies">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                                <p>Help us understand how visitors interact with our website.</p>
+                            </div>
+                            
+                            <div class="cookie-category">
+                                <div class="cookie-category-header">
+                                    <h4>Marketing Cookies</h4>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="marketing-cookies">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                                <p>Used to deliver relevant advertisements and track campaign effectiveness.</p>
+                            </div>
+                        </div>
+                        <div class="cookie-modal-footer">
+                            <button class="btn btn-outline" onclick="rejectOptional()">Reject Optional</button>
+                            <button class="btn btn-primary" onclick="savePreferences()">Save Preferences</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="legal-section">
+                    <h2>1. What are Cookies?</h2>
+                    <p>Cookies are small text files that are stored on your device when you visit our website or use our mobile app. They help us provide you with a better experience by remembering your preferences and analyzing how you use our services.</p>
+                    
+                    <div class="cookie-types">
+                        <div class="cookie-type">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Session Cookies</h4>
+                                <p>Temporary cookies that expire when you close your browser</p>
+                            </div>
+                        </div>
+                        <div class="cookie-type">
+                            <i class="fas fa-save"></i>
+                            <div>
+                                <h4>Persistent Cookies</h4>
+                                <p>Stored on your device for a set period or until manually deleted</p>
+                            </div>
+                        </div>
+                        <div class="cookie-type">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>First-Party Cookies</h4>
+                                <p>Set directly by DriveSwift when you visit our website</p>
+                            </div>
+                        </div>
+                        <div class="cookie-type">
+                            <i class="fas fa-external-link-alt"></i>
+                            <div>
+                                <h4>Third-Party Cookies</h4>
+                                <p>Set by external services we use (analytics, advertising, etc.)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>2. How We Use Cookies</h2>
+                    <p>DriveSwift uses cookies for several purposes to enhance your experience and improve our services:</p>
+                    
+                    <div class="cookie-purposes">
+                        <div class="purpose-item">
+                            <i class="fas fa-cog"></i>
+                            <h4>Essential Functionality</h4>
+                            <p>Enable core website features, remember login status, and maintain security</p>
+                        </div>
+                        <div class="purpose-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Performance & Analytics</h4>
+                            <p>Understand how users interact with our site to improve user experience</p>
+                        </div>
+                        <div class="purpose-item">
+                            <i class="fas fa-user-cog"></i>
+                            <h4>Personalization</h4>
+                            <p>Remember preferences, customize content, and provide relevant recommendations</p>
+                        </div>
+                        <div class="purpose-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <h4>Marketing & Advertising</h4>
+                            <p>Deliver targeted content and measure advertising effectiveness</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>3. Types of Cookies We Use</h2>
+                    
+                    <div class="cookie-table">
+                        <h3>Essential Cookies</h3>
+                        <div class="cookie-item essential">
+                            <div class="cookie-details">
+                                <h4>Authentication Cookies</h4>
+                                <p><strong>Purpose:</strong> Keep you logged in and maintain session security</p>
+                                <p><strong>Duration:</strong> Session or 30 days</p>
+                                <p><strong>Examples:</strong> session_id, auth_token, csrf_token</p>
+                            </div>
+                        </div>
+                        <div class="cookie-item essential">
+                            <div class="cookie-details">
+                                <h4>Preference Cookies</h4>
+                                <p><strong>Purpose:</strong> Remember your settings and preferences</p>
+                                <p><strong>Duration:</strong> 1 year</p>
+                                <p><strong>Examples:</strong> language_pref, theme_setting, cookie_consent</p>
+                            </div>
+                        </div>
+                        <div class="cookie-item essential">
+                            <div class="cookie-details">
+                                <h4>Security Cookies</h4>
+                                <p><strong>Purpose:</strong> Protect against security threats and fraud</p>
+                                <p><strong>Duration:</strong> Session</p>
+                                <p><strong>Examples:</strong> security_token, rate_limit, device_fingerprint</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cookie-table">
+                        <h3>Analytics Cookies</h3>
+                        <div class="cookie-item analytics">
+                            <div class="cookie-details">
+                                <h4>Google Analytics</h4>
+                                <p><strong>Purpose:</strong> Track website usage, user behavior, and performance metrics</p>
+                                <p><strong>Duration:</strong> 2 years</p>
+                                <p><strong>Examples:</strong> _ga, _gid, _gat</p>
+                                <p><strong>Provider:</strong> Google LLC</p>
+                            </div>
+                        </div>
+                        <div class="cookie-item analytics">
+                            <div class="cookie-details">
+                                <h4>Internal Analytics</h4>
+                                <p><strong>Purpose:</strong> Monitor app performance and user engagement</p>
+                                <p><strong>Duration:</strong> 1 year</p>
+                                <p><strong>Examples:</strong> ds_analytics, page_views, user_journey</p>
+                                <p><strong>Provider:</strong> DriveSwift Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cookie-table">
+                        <h3>Marketing Cookies</h3>
+                        <div class="cookie-item marketing">
+                            <div class="cookie-details">
+                                <h4>Social Media Cookies</h4>
+                                <p><strong>Purpose:</strong> Enable social media sharing and track referrals</p>
+                                <p><strong>Duration:</strong> Varies (30 days - 2 years)</p>
+                                <p><strong>Examples:</strong> fbp, _fbq, li_sugr</p>
+                                <p><strong>Providers:</strong> Facebook, LinkedIn, Twitter</p>
+                            </div>
+                        </div>
+                        <div class="cookie-item marketing">
+                            <div class="cookie-details">
+                                <h4>Advertising Cookies</h4>
+                                <p><strong>Purpose:</strong> Deliver targeted advertisements and measure campaign effectiveness</p>
+                                <p><strong>Duration:</strong> 90 days - 2 years</p>
+                                <p><strong>Examples:</strong> doubleclick, ads_prefs, campaign_id</p>
+                                <p><strong>Providers:</strong> Google Ads, Microsoft Advertising</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>4. Mobile App Data Storage</h2>
+                    <p>In addition to web cookies, our mobile app uses local storage technologies:</p>
+                    
+                    <ul class="legal-list">
+                        <li><strong>Local Storage:</strong> Store app preferences, progress data, and offline content</li>
+                        <li><strong>Secure Storage:</strong> Encrypted storage for sensitive information like authentication tokens</li>
+                        <li><strong>Cache Storage:</strong> Improve app performance by storing frequently accessed content</li>
+                        <li><strong>Database Storage:</strong> Store practice questions, results, and user achievements</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-mobile-alt"></i> Mobile App Storage</h4>
+                        <p>Mobile app data is stored locally on your device and synchronized with our secure servers when you're online. This ensures your progress is saved and accessible across devices.</p>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>5. Third-Party Services</h2>
+                    <p>We work with trusted third-party services that may set their own cookies:</p>
+                    
+                    <div class="third-party-services">
+                        <div class="service-item">
+                            <h4>Google Analytics</h4>
+                            <p>Website traffic analysis and user behavior insights</p>
+                            <a href="https://policies.google.com/privacy" class="legal-link" target="_blank" rel="noopener">Privacy Policy</a>
+                        </div>
+                        <div class="service-item">
+                            <h4>RevenueCat</h4>
+                            <p>Subscription management and in-app purchase processing</p>
+                            <a href="https://www.revenuecat.com/privacy" class="legal-link" target="_blank" rel="noopener">Privacy Policy</a>
+                        </div>
+                        <div class="service-item">
+                            <h4>Supabase</h4>
+                            <p>Backend services, authentication, and data synchronization</p>
+                            <a href="https://supabase.com/privacy" class="legal-link" target="_blank" rel="noopener">Privacy Policy</a>
+                        </div>
+                        <div class="service-item">
+                            <h4>Capacitor Plugins</h4>
+                            <p>Native device features and cross-platform functionality</p>
+                            <a href="https://capacitorjs.com/privacy" class="legal-link" target="_blank" rel="noopener">Privacy Policy</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>6. Managing Your Cookie Preferences</h2>
+                    <h3>6.1 Cookie Consent</h3>
+                    <p>When you first visit our website, you'll see a cookie consent banner. You can:</p>
+                    <ul class="legal-list">
+                        <li>Accept all cookies for the full website experience</li>
+                        <li>Manage preferences to choose which cookie categories to allow</li>
+                        <li>Reject optional cookies (essential cookies will still be used)</li>
+                    </ul>
+
+                    <h3>6.2 Browser Controls</h3>
+                    <p>You can control cookies through your browser settings:</p>
+                    <div class="browser-controls">
+                        <div class="browser-item">
+                            <i class="fab fa-chrome"></i>
+                            <div>
+                                <h4>Google Chrome</h4>
+                                <p>Settings → Privacy and security → Cookies and other site data</p>
+                            </div>
+                        </div>
+                        <div class="browser-item">
+                            <i class="fab fa-firefox"></i>
+                            <div>
+                                <h4>Mozilla Firefox</h4>
+                                <p>Options → Privacy & Security → Cookies and Site Data</p>
+                            </div>
+                        </div>
+                        <div class="browser-item">
+                            <i class="fab fa-safari"></i>
+                            <div>
+                                <h4>Safari</h4>
+                                <p>Preferences → Privacy → Manage Website Data</p>
+                            </div>
+                        </div>
+                        <div class="browser-item">
+                            <i class="fab fa-edge"></i>
+                            <div>
+                                <h4>Microsoft Edge</h4>
+                                <p>Settings → Cookies and site permissions → Cookies and site data</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>6.3 Mobile App Settings</h3>
+                    <p>In our mobile app, you can manage data collection preferences:</p>
+                    <ul class="legal-list">
+                        <li>Go to Settings → Privacy → Data Collection</li>
+                        <li>Toggle analytics and marketing data collection</li>
+                        <li>Manage notification preferences</li>
+                        <li>Clear local storage and cache</li>
+                    </ul>
+
+                    <div class="cookie-controls">
+                        <button class="btn btn-primary" onclick="showCookieSettings()">
+                            <i class="fas fa-cog"></i> Manage Cookie Preferences
+                        </button>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>7. Impact of Disabling Cookies</h2>
+                    <p>If you choose to disable certain cookies, some website features may be affected:</p>
+                    
+                    <div class="impact-table">
+                        <div class="impact-row">
+                            <div class="impact-type">Essential Cookies Disabled</div>
+                            <div class="impact-effect">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Website may not function properly, login issues may occur
+                            </div>
+                        </div>
+                        <div class="impact-row">
+                            <div class="impact-type">Analytics Cookies Disabled</div>
+                            <div class="impact-effect">
+                                <i class="fas fa-info-circle"></i>
+                                Limited ability to improve user experience based on usage data
+                            </div>
+                        </div>
+                        <div class="impact-row">
+                            <div class="impact-type">Marketing Cookies Disabled</div>
+                            <div class="impact-effect">
+                                <i class="fas fa-check-circle"></i>
+                                Less relevant advertisements, but core functionality remains
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="legal-section">
+                    <h2>8. Updates to This Policy</h2>
+                    <p>We may update this Cookie Policy periodically to reflect changes in:</p>
+                    <ul class="legal-list">
+                        <li>Technologies we use</li>
+                        <li>Legal requirements</li>
+                        <li>Third-party services</li>
+                        <li>User feedback and preferences</li>
+                    </ul>
+                    
+                    <p>We'll notify you of significant changes through our website banner or app notifications.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>9. Contact Information</h2>
+                    <p>If you have questions about our use of cookies or this policy:</p>
+                    <div class="contact-info">
+                        <p><strong>DriveSwift Ltd</strong></p>
+                        <p>Email: <a href="mailto:privacy@driveswift.co.uk" class="legal-link">privacy@driveswift.co.uk</a></p>
+                        <p>Data Protection Officer: <a href="mailto:dpo@driveswift.co.uk" class="legal-link">dpo@driveswift.co.uk</a></p>
+                        <p>Address: 123 Digital Drive, Tech Quarter, London, EC1A 1BB, United Kingdom</p>
+                        <p>Phone: +44 20 7123 4567</p>
+                    </div>
+                </section>
+
+                <div class="legal-footer">
+                    <p><strong>Last Updated:</strong> September 9, 2025</p>
+                    <p><strong>Version:</strong> 1.0</p>
+                </div>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="legal-nav">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#" onclick="scrollToSection(1)">What are Cookies?</a></li>
+                    <li><a href="#" onclick="scrollToSection(2)">How We Use Cookies</a></li>
+                    <li><a href="#" onclick="scrollToSection(3)">Types of Cookies</a></li>
+                    <li><a href="#" onclick="scrollToSection(4)">Mobile App Storage</a></li>
+                    <li><a href="#" onclick="scrollToSection(5)">Third-Party Services</a></li>
+                    <li><a href="#" onclick="scrollToSection(6)">Managing Preferences</a></li>
+                    <li><a href="#" onclick="scrollToSection(7)">Impact of Disabling</a></li>
+                    <li><a href="#" onclick="scrollToSection(8)">Policy Updates</a></li>
+                    <li><a href="#" onclick="scrollToSection(9)">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-car" style="color: #7c3aed;"></i>
+                        <span>DriveSwift</span>
+                    </div>
+                    <p>Master your theory test and hazard perception with official DVSA licensed content.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Features</h4>
+                    <a href="index.html#features">Theory Practice</a>
+                    <a href="index.html#features">Hazard Perception</a>
+                    <a href="index.html#features">Highway Code</a>
+                    <a href="index.html#download">Download</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="help.html">Help Center</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="status.html">System Status</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="dvsa-license.html">DVSA License</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 DriveSwift. All rights reserved.</p>
+                    <p>Official DVSA licensed content partner. Licensed by the Driver and Vehicle Standards Agency.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+
+        // Smooth scroll to sections
+        function scrollToSection(sectionNumber) {
+            const sections = document.querySelectorAll('.legal-section');
+            if (sections[sectionNumber - 1]) {
+                sections[sectionNumber - 1].scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Cookie management functionality
+        function showCookieSettings() {
+            document.getElementById('cookieModal').style.display = 'flex';
+            loadCookiePreferences();
+        }
+
+        function closeCookieSettings() {
+            document.getElementById('cookieModal').style.display = 'none';
+        }
+
+        function acceptAllCookies() {
+            setCookieConsent('all');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        function rejectOptional() {
+            setCookieConsent('essential');
+            document.getElementById('cookieModal').style.display = 'none';
+        }
+
+        function savePreferences() {
+            const analytics = document.getElementById('analytics-cookies').checked;
+            const marketing = document.getElementById('marketing-cookies').checked;
+            
+            setCookieConsent({
+                essential: true,
+                analytics: analytics,
+                marketing: marketing
+            });
+            
+            document.getElementById('cookieModal').style.display = 'none';
+        }
+
+        function setCookieConsent(preferences) {
+            localStorage.setItem('cookieConsent', JSON.stringify(preferences));
+            // Apply cookie settings based on preferences
+            if (typeof gtag !== 'undefined') {
+                if (preferences.analytics === false || preferences === 'essential') {
+                    gtag('consent', 'update', {
+                        analytics_storage: 'denied'
+                    });
+                } else {
+                    gtag('consent', 'update', {
+                        analytics_storage: 'granted'
+                    });
+                }
+            }
+        }
+
+        function loadCookiePreferences() {
+            const preferences = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
+            
+            if (preferences.analytics !== undefined) {
+                document.getElementById('analytics-cookies').checked = preferences.analytics;
+            }
+            if (preferences.marketing !== undefined) {
+                document.getElementById('marketing-cookies').checked = preferences.marketing;
+            }
+        }
+
+        // Check if cookie consent has been given
+        function checkCookieConsent() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        }
+
+        // Initialize cookie consent check
+        document.addEventListener('DOMContentLoaded', checkCookieConsent);
+    </script>
+
+    <style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            border-top: 3px solid var(--primary);
+        }
+
+        .cookie-banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cookie-banner-text {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cookie-banner-text i {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .cookie-banner-text h4 {
+            margin: 0 0 0.5rem 0;
+            color: white;
+        }
+
+        .cookie-banner-text p {
+            margin: 0;
+            color: #cbd5e0;
+            line-height: 1.4;
+        }
+
+        .cookie-banner-actions {
+            display: flex;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+        }
+
+        .cookie-modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .cookie-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .cookie-modal-header h3 {
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .cookie-modal-body {
+            padding: 1.5rem;
+        }
+
+        .cookie-category {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+        }
+
+        .cookie-category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .cookie-category h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .cookie-category p {
+            margin: 0;
+            color: var(--text-color-light);
+            font-size: 0.9rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 24px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .toggle-slider {
+            background-color: var(--primary);
+        }
+
+        input:checked + .toggle-slider:before {
+            transform: translateX(26px);
+        }
+
+        input:disabled + .toggle-slider {
+            background-color: var(--success);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .cookie-modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #e1e5e9;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+        }
+
+        .cookie-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .cookie-type {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .cookie-type i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .cookie-type h4 {
+            margin: 0 0 0.25rem 0;
+            color: var(--text-color);
+        }
+
+        .cookie-type p {
+            margin: 0;
+            color: var(--text-color-light);
+            font-size: 0.9rem;
+        }
+
+        .cookie-purposes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .purpose-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e5e9;
+        }
+
+        .purpose-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .purpose-item h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-color);
+        }
+
+        .cookie-table {
+            margin: 2rem 0;
+        }
+
+        .cookie-table h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .cookie-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .cookie-item.essential {
+            background: #f0f9ff;
+            border-left-color: var(--success);
+        }
+
+        .cookie-item.analytics {
+            background: #fefbff;
+            border-left-color: var(--primary);
+        }
+
+        .cookie-item.marketing {
+            background: #fffbeb;
+            border-left-color: var(--secondary);
+        }
+
+        .cookie-details h4 {
+            margin: 0 0 1rem 0;
+            color: var(--text-color);
+        }
+
+        .cookie-details p {
+            margin: 0.5rem 0;
+            color: var(--text-color-light);
+            line-height: 1.4;
+        }
+
+        .third-party-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .service-item {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e1e5e9;
+        }
+
+        .service-item h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-color);
+        }
+
+        .service-item p {
+            margin: 0 0 1rem 0;
+            color: var(--text-color-light);
+            font-size: 0.9rem;
+        }
+
+        .browser-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .browser-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 8px;
+        }
+
+        .browser-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .browser-item h4 {
+            margin: 0 0 0.25rem 0;
+            color: var(--text-color);
+        }
+
+        .browser-item p {
+            margin: 0;
+            color: var(--text-color-light);
+            font-size: 0.85rem;
+        }
+
+        .impact-table {
+            margin: 1.5rem 0;
+        }
+
+        .impact-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e1e5e9;
+        }
+
+        .impact-type {
+            font-weight: 600;
+            color: var(--text-color);
+            min-width: 200px;
+        }
+
+        .impact-effect {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color-light);
+        }
+
+        .impact-effect i.fa-exclamation-triangle {
+            color: #ef4444;
+        }
+
+        .impact-effect i.fa-info-circle {
+            color: var(--secondary);
+        }
+
+        .impact-effect i.fa-check-circle {
+            color: var(--success);
+        }
+
+        .cookie-controls {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-banner-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cookie-banner-actions {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .cookie-types,
+            .cookie-purposes,
+            .third-party-services,
+            .browser-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .impact-type {
+                min-width: auto;
+                font-weight: 600;
+            }
+        }
+    </style>
+</body>
+</html>
