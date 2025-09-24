@@ -1,0 +1,56 @@
+::1 - - [24/Sep/2025 11:02:16] "GET / HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 11:02:17] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 11:02:17] "GET /script.js HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 11:02:17] code 404, message File not found
+::1 - - [24/Sep/2025 11:02:17] "GET /assets/favicon.ico HTTP/1.1" 404 -
+::1 - - [24/Sep/2025 12:39:04] "GET / HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 12:39:04] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 12:39:04] "GET /script.js HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 12:39:33] "GET /car-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 12:39:33] code 404, message File not found
+::1 - - [24/Sep/2025 12:39:33] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [24/Sep/2025 12:39:58] "GET /index.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 12:39:58] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 12:40:05] code 404, message File not found
+::1 - - [24/Sep/2025 12:40:05] "GET /motorcycle-app.html HTTP/1.1" 404 -
+::1 - - [24/Sep/2025 12:40:10] code 404, message File not found
+::1 - - [24/Sep/2025 12:40:10] "GET /adi-app.html HTTP/1.1" 404 -
+::1 - - [24/Sep/2025 12:40:15] code 404, message File not found
+::1 - - [24/Sep/2025 12:40:15] "GET /lgv-pcv-app.html HTTP/1.1" 404 -
+::1 - - [24/Sep/2025 13:00:58] "GET /index.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:00:59] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:00:59] "GET /script.js HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:04:44] "GET /car-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:04:44] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:05:01] "GET /index.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:05:05] "GET /motorcycle-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:05:24] "GET /adi-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:05:40] "GET /lgv-pcv-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:05:46] "GET /terms.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:06:02] "GET /privacy.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:06:56] "GET /index.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:09:31] "GET /adi-app.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:09:31] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:23:34] "GET /index.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:23:34] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:23:34] "GET /script.js HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:23:38] "GET /car-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:23:42] "GET /terms.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:26:51] "GET /privacy.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:26:52] "GET /index.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:26:54] "GET /motorcycle-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 13:39:27] "GET /privacy.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:39:27] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:39:29] "GET /privacy.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:39:30] "GET /index.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 13:39:33] "GET /car-app.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:05:37] "GET /terms.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 17:05:37] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:06:11] "GET /privacy.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 17:06:11] "GET /script.js HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:06:20] "GET /car-app.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:06:26] "GET /motorcycle-app.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:06:29] "GET /adi-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 17:06:32] "GET /lgv-pcv-app.html HTTP/1.1" 200 -
+::1 - - [24/Sep/2025 17:06:43] "GET /privacy.html HTTP/1.1" 304 -
+::1 - - [24/Sep/2025 17:07:50] "GET /index.html HTTP/1.1" 304 -

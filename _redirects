@@ -1,0 +1,10 @@
+# Redirect common URL patterns
+/home /
+/terms-of-service /terms.html
+/privacy-policy /privacy.html
+/cookie-policy /cookies.html
+/support /help.html
+/contact-us /contact.html
+
+# Fallback for SPA routing
+/* /index.html 200
