@@ -1,6 +1,6 @@
 # DriveSwift Landing Page
 
-Professional landing page for DriveSwift - the UK's premier driving test preparation app with official DVSA licensed content.
+Professional landing page for DriveSwift - the UK's premier driving test preparation app with DVSA licensed licensed content.
 
 ## 🎯 Purpose
 
@@ -8,7 +8,7 @@ This landing page showcases DriveSwift's key differentiators:
 - **£1,200 DVSA Content Investment** - 36 official CGI hazard perception clips
 - **Superior Performance** - 4.8s speed-to-question vs 15s+ competitors  
 - **94% Pass Rate** - vs 67% UK average
-- **Official DVSA Partnership** - Licensed content provider
+- **DVSA licensed Partnership** - Licensed content provider
 
 ## 🚀 Quick Start
 
@@ -169,7 +169,7 @@ This landing page is specifically designed for the **Friday, September 12th, 202
 ✅ **£1,200 investment highlighted** throughout the page  
 ✅ **Performance metrics showcased** vs 130+ competitors  
 ✅ **Mobile-responsive demo** ready for presentation  
-✅ **Official DVSA branding** and compliance messaging  
+✅ **DVSA licensed branding** and compliance messaging  
 
 Perfect for demonstrating DriveSwift as a serious, technically superior DVSA content partner.
 

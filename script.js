@@ -301,9 +301,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Console welcome message
 console.log(`
-🚗 DriveSwift - Official DVSA Licensed Content
+🚗 DriveSwift - DVSA Licensed Content
 📱 Built for UK driving test success
-💡 94% pass rate with official DVSA content
+💡 94% pass rate with DVSA licensed content
 
 Interested in the tech behind this page?
 Get in touch: hello@driveswift.co.uk
