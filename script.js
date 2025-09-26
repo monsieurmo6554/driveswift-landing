@@ -46,6 +46,43 @@ document.addEventListener('DOMContentLoaded', function() {
             bars[2].style.transform = 'rotate(0) translate(0, 0)';
         }
     });
+
+    // Enhanced dropdown functionality for deployment
+    const navDropdowns = document.querySelectorAll('.nav-dropdown');
+    
+    navDropdowns.forEach(dropdown => {
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        
+        // Add click handlers for better mobile/deployment support
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+        
+        // Ensure hover works on desktop
+        dropdown.addEventListener('mouseenter', function() {
+            if (window.innerWidth > 768) {
+                dropdown.classList.add('active');
+            }
+        });
+        
+        dropdown.addEventListener('mouseleave', function() {
+            if (window.innerWidth > 768) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        navDropdowns.forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
 });
 
 // Smooth scrolling for anchor links
